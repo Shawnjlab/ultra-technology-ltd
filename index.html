@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultra Electronics | Professional Repairs & Accessories</title>
+  <meta name="description" content="Professional laptop & phone repairs, genuine accessories, affordable prices. Located at Strathmore University Student Centre, Nairobi." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== HAMBURGER BUTTON ===== -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- ===== SIDEBAR OVERLAY ===== -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="logo-circle">
+      <img src="WhatsApp%20Image%202026-06-17%20at%2019.57.31%20(1).jpeg" alt="Ultra Electronics" />
+    </div>
+    <nav>
+      <a href="#" data-page="home" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="#" data-page="services"><i class="fas fa-tools"></i> Services</a>
+      <a href="#" data-page="products"><i class="fas fa-headphones"></i> Accessories</a>
+      <a href="#" data-page="location"><i class="fas fa-map-pin"></i> Location</a>
+      <a href="#" data-page="contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="theme-toggle-wrapper">
+      <div class="theme-toggle">
+        <span class="theme-label"><i class="fas fa-moon"></i> Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content" id="mainContent">
+    <!-- HOME PAGE -->
+    <section id="page-home" class="page-section">
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-content">
+          <div class="urgent-badge">
+            <i class="fas fa-bolt"></i>
+            <span>Same-Day Service Available</span>
+          </div>
+          <h1>🔧 Professional Electrical and Electronics Repair and Services</h1>
+          <p>Fast Repairs • Genuine Accessories • Affordable Prices</p>
+          <div class="cta-buttons">
+            <a href="#" data-page="services" class="btn btn-primary">
+              <i class="fas fa-tools"></i> Book a Repair
+            </a>
+            <a href="#" data-page="contact" class="btn btn-primary">
+              <i class="fas fa-phone"></i> Contact Us
+            </a>
+            <a href="#" data-page="products" class="btn btn-primary">
+              <i class="fas fa-shopping-bag"></i> Shop Accessories
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <div class="about-section">
+        <div class="about-header">
+          <h2>About Ultra Electronics</h2>
+          <div class="about-divider"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              <strong>Ultra Electronics Technology</strong> is your trusted partner for professional electronics repair and genuine accessories in Nairobi.
+            </p>
+            <p>
+              Our team of <strong>certified technicians</strong> brings years of experience in diagnosing and repairing a wide range of devices including laptops, smartphones, tablets, and gaming consoles. We understand how important your devices are to your daily life, which is why we prioritize <strong>fast turnaround times</strong> without compromising on quality.
+            </p>
+            <div class="about-mission">
+              <div class="mission-item">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                  <h4>Our Mission</h4>
+                  <p>To provide reliable, affordable, and professional electronics repair services while offering genuine accessories at competitive prices.</p>
+                </div>
+              </div>
+              <div class="mission-item">
+                <i class="fas fa-eye"></i>
+                <div>
+                  <h4>Our Vision</h4>
+                  <p>To become the most trusted electronics repair and accessories hub in Nairobi, known for quality service and customer satisfaction.</p>
+                </div>
+              </div>
+              <div class="mission-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                  <h4>Our Values</h4>
+                  <p>Integrity, Excellence, Customer-Centricity, Innovation, and Reliability in everything we do.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image" onclick="openImageExpand(this.querySelector('img').src, 'About Ultra Electronics')">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" alt="About Ultra Electronics" />
+            <div class="about-image-badge">
+              <span>6+ Years</span>
+              <small>Of Excellence</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fas fa-clock"></i>
+          <h4>Fast Turnaround</h4>
+          <p>Most repairs completed within 24 hours</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-user-check"></i>
+          <h4>Expert Technicians</h4>
+          <p>Certified and experienced professionals</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-tag"></i>
+          <h4>Best Prices</h4>
+          <p>Affordable rates with quality service</p>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <div class="stats-section" id="statsSection">
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span>
+          <span class="stat-label">Devices Repaired</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-label">Customer Satisfaction %</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4.8">0</span>
+          <span class="stat-label">Average Rating ★</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials">
+        <h3>What Our Customers Say</h3>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Fixed my laptop screen in under 2 hours! Excellent service and very professional."</p>
+            <span class="customer">- Shawn N.</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Professional and affordable. They have genuine accessories at great prices."</p>
+            <span class="customer">- Sarah K.</span>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Quick response and quality work. My phone works like new!"</p>
+            <span class="customer">- Timothy O.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brands We Repair -->
+      <div class="brands-section">
+        <p>We Repair All Major Brands</p>
+
+        <div class="brand-group">
+          <h4 class="brand-name"><i class="fab fa-apple"></i> Apple</h4>
+          <div class="brand-images">
+            <img src="20260618_085723.jpg" alt="Apple 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 1')" />
+            <img src="20260618_090027.jpg" alt="Apple 2" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 2')" />
+            <img src="20260618_090053.jpg" alt="Apple 3" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 3')" />
+            <img src="20260618_085948.jpg" alt="Apple 4" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 4')" />
+            <img src="20260618_090125.jpg" alt="Apple 5" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 5')" />
+            <img src="20260618_091610.jpg" alt="Apple 6" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Apple - Device 6')" />
+          </div>
+        </div>
+
+        <div class="brand-group">
+          <h4 class="brand-name"><i class="fas fa-mobile-alt"></i> iPhone, Samsung, Tecno, Redmi</h4>
+          <div class="brand-images">
+            <img src="20260618_092744.jpg" alt="Phone 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Samsung - Device 1')" />
+            <img src="20260618_092802.jpg" alt="Phone 2" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Samsung - Device 2')" />
+            <img src="20260618_092842.jpg" alt="Phone 3" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Samsung - Device 3')" />
+            <img src="20260618_092850.jpg" alt="Phone 4" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Samsung - Device 4')" />
+          </div>
+        </div>
+
+        <div class="brand-group">
+          <h4 class="brand-name"><i class="fas fa-laptop"></i> HP</h4>
+          <div class="brand-images">
+            <img src="20260618_090631.jpg" alt="HP 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'HP - Device 1')" />
+            <img src="20260618_090642.jpg" alt="HP 2" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'HP - Device 2')" />
+            <img src="20260618_090928.jpg" alt="HP 3" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'HP - Device 3')" />
+          </div>
+        </div>
+
+        <div class="brand-group">
+          <h4 class="brand-name"><i class="fas fa-laptop"></i> Lenovo</h4>
+          <div class="brand-images">
+            <img src="20260618_093350.jpg" alt="Lenovo 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Lenovo - Device 1')" />
+          </div>
+        </div>
+
+        <div class="brand-group">
+          <h4 class="brand-name"><i class="fas fa-laptop"></i> Acer</h4>
+          <div class="brand-images">
+            <img src="20260618_091049.jpg" alt="Acer 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Acer - Device 1')" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagnosis -->
+      <div class="diagnosis-section">
+        <div class="diagnosis-header">
+          <h2>Our Diagnostic & Motherboard Repair Process</h2>
+          <p>We use advanced tools and techniques to pinpoint and fix hardware issues, including motherboard failures.</p>
+        </div>
+        <div class="diagnosis-grid">
+          <div class="diagnosis-card">
+            <img src="20260610_080041.jpg" alt="Step 1" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 1: Free Diagnostic')" />
+            <div class="diagnosis-info">
+              <span class="step-num">01</span>
+              <h3>Diagnostic</h3>
+              <p>We thoroughly test your device to pinpoint the exact issue, including motherboard faults, at a cost.</p>
+            </div>
+          </div>
+          <div class="diagnosis-card">
+            <img src="20260618_065310.jpg" alt="Step 2" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 2: Motherboard Inspection')" />
+            <div class="diagnosis-info">
+              <span class="step-num">02</span>
+              <h3>Motherboard Inspection</h3>
+              <p>We carefully examine the motherboard using microscopes and multimeters to identify damaged components.</p>
+            </div>
+          </div>
+          <div class="diagnosis-card">
+            <img src="20260618_065947.jpg" alt="Step 3" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 3: Component-Level Repair')" />
+            <div class="diagnosis-info">
+              <span class="step-num">03</span>
+              <h3>Component-Level Repair</h3>
+              <p>We replace faulty capacitors, chips, or traces on the motherboard using precision soldering tools.</p>
+            </div>
+          </div>
+          <div class="diagnosis-card">
+            <img src="20260618_065259.jpg" alt="Step 4" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 4: Quality Assurance')" />
+            <div class="diagnosis-info">
+              <span class="step-num">04</span>
+              <h3>Quality Assurance</h3>
+              <p>Your device is rigorously tested to ensure it meets our high performance standards before handover.</p>
+            </div>
+          </div>
+          <div class="diagnosis-card">
+            <img src="20260618_093306.jpg" alt="Step 6" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 6: Diagnostic')" />
+            <div class="diagnosis-info">
+              <span class="step-num">06</span>
+              <h3>Hard Drive Diagnostic</h3>
+              <p>We thoroughly test your device to pinpoint the exact issue, including Hard Drive faults, at a cost.</p>
+            </div>
+          </div>
+            <div class="diagnosis-card">
+            <img src="WhatsApp Image 2026-06-27 at 14.52.40.jpeg" alt="Step 5" loading="lazy" decoding="async" onclick="openImageExpand(this.src, 'Step 5: Pick-up & Follow-up')" />
+            <div class="diagnosis-info">
+              <span class="step-num">05</span>
+              <h3>Pick-up & Follow-up</h3>
+              <p>Collect your perfectly working device and enjoy peace of mind with our after-service support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="social-section">
+        <h3>Connect With Us</h3>
+        <p>Follow us on social media for updates, promotions, and tips</p>
+        <div class="social-links-circle">
+          <a href="https://wa.me/254717673198" target="_blank" class="social-icon-circle whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/ultr_aelectronic" target="_blank" class="social-icon-circle instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@ultr_aelectronic" target="_blank" class="social-icon-circle tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="page-services" class="page-section hidden">
+      <div class="services-header-wrapper">
+        <div class="services-header-content">
+          <span class="services-badge"><i class="fas fa-tools"></i> What We Do</span>
+          <h2>Professional Repair &amp; Installation Services</h2>
+          <p class="services-subtitle">
+            From diagnostics to motherboard-level repairs, we handle it all with precision,
+            speed, and genuine parts &mdash; all backed by our quality guarantee.
+          </p>
+        </div>
+        <div class="services-header-image">
+          <img src="WhatsApp%20Image%202026-06-20%20at%2022.26.04%20(1).jpeg" alt="Services Offered" onclick="openImageExpand(this.src, 'Services Offered at Ultra Electronics')" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-wifi"></i></div>
+          <div class="service-card-body">
+            <h3>Installation Services</h3>
+            <p class="service-desc">Professional installation of electrical, networking, and security systems for homes, offices, and institutions.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> WiFi &amp; network setup</li>
+              <li><i class="fas fa-check-circle"></i> CCTV &amp; security camera installation</li>
+              <li><i class="fas fa-check-circle"></i> Electrical wiring &amp; repairs</li>
+              <li><i class="fas fa-check-circle"></i> Telecommunication systems</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> 4–48 hrs</span>
+            </div>
+            <a href="#" data-page="contact" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-headphones"></i></div>
+          <div class="service-card-body">
+            <h3>Genuine Accessories</h3>
+            <p class="service-desc">We stock a wide range of authentic accessories for all devices. Quality guaranteed at competitive prices.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Chargers &amp; cables (Apple, Android, USB-C)</li>
+              <li><i class="fas fa-check-circle"></i> Earphones, headphones &amp; earpods</li>
+              <li><i class="fas fa-check-circle"></i> Keyboards, mice &amp; external drives</li>
+              <li><i class="fas fa-check-circle"></i> Phone cases &amp; screen protectors</li>
+              <li><i class="fas fa-check-circle"></i> Power banks &amp; adapters</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> In stock</span>
+            </div>
+            <a href="#" data-page="products" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Browse Shop
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-laptop"></i></div>
+          <div class="service-card-body">
+            <h3>Laptop Repair</h3>
+            <p class="service-desc">Comprehensive diagnostics and repair for all laptop brands. We fix hardware and software issues with fast turnaround.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Screen replacement (LCD / OLED)</li>
+              <li><i class="fas fa-check-circle"></i> Motherboard &amp; component repair</li>
+              <li><i class="fas fa-check-circle"></i> Virus removal &amp; OS installation</li>
+              <li><i class="fas fa-check-circle"></i> Battery &amp; charging port replacement</li>
+              <li><i class="fas fa-check-circle"></i> Data recovery &amp; backup</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> 2–24 hrs</span>
+            </div>
+            <a href="#" data-page="contact" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="service-card-body">
+            <h3>Phone Repair</h3>
+            <p class="service-desc">Expert repairs for all smartphone brands including iPhone, Samsung, Tecno, Redmi, and more. Fast, reliable, and affordable.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Screen &amp; digitizer replacement</li>
+              <li><i class="fas fa-check-circle"></i> Battery replacement &amp; optimization</li>
+              <li><i class="fas fa-check-circle"></i> Charging port &amp; flex cable repair</li>
+              <li><i class="fas fa-check-circle"></i> Water damage recovery</li>
+              <li><i class="fas fa-check-circle"></i> Software updates &amp; jailbreak</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> 1–6 hrs</span>
+            </div>
+            <a href="#" data-page="contact" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-tablet-alt"></i></div>
+          <div class="service-card-body">
+            <h3>Tablet Repair</h3>
+            <p class="service-desc">Professional tablet repairs for iPad, Samsung Galaxy Tab, and other brands. We restore your device to like-new condition.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Screen &amp; glass replacement</li>
+              <li><i class="fas fa-check-circle"></i> Battery &amp; charging issues</li>
+              <li><i class="fas fa-check-circle"></i> Charging port repair</li>
+              <li><i class="fas fa-check-circle"></i> Speaker &amp; button repairs</li>
+              <li><i class="fas fa-check-circle"></i> Software troubleshooting</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> 2–12 hrs</span>
+            </div>
+            <a href="#" data-page="contact" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Get a Quote
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card-expanded">
+          <div class="service-card-icon"><i class="fas fa-shipping-fast"></i></div>
+          <div class="service-card-body">
+            <h3>Ex-UK Phones &amp; Laptops</h3>
+            <p class="service-desc">Quality pre-owned devices imported from the UK. Fully tested, unlocked, and ready to use &mdash; at a fraction of the cost.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check-circle"></i> Grade A &amp; B iPhones &amp; Samsung</li>
+              <li><i class="fas fa-check-circle"></i> Laptops (HP, Dell, Lenovo, Acer)</li>
+              <li><i class="fas fa-check-circle"></i> Fully tested &amp; unlocked</li>
+              <li><i class="fas fa-check-circle"></i> Clean IMEI &amp; no iCloud lock</li>
+              <li><i class="fas fa-check-circle"></i> 30-day exchange policy</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time"><i class="fas fa-clock"></i> View in store</span>
+            </div>
+            <a href="#" data-page="contact" class="btn btn-sm btn-primary service-cta">
+              <i class="fas fa-chevron-right"></i> Inquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-choose-section">
+        <div class="why-header">
+          <span class="why-badge"><i class="fas fa-star"></i> Why Ultra Electronics</span>
+          <h3>Trusted by Hundreds of Customers</h3>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-certificate"></i></div>
+            <h4>Certified Technicians</h4>
+            <p>Our team is trained and certified in modern electronics repair, ensuring quality workmanship every time.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h4>Same-Day Service</h4>
+            <p>Most repairs are completed within 24 hours. We understand your time is valuable, so we work fast.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div>
+            <h4>Affordable Pricing</h4>
+            <p>Quality service at prices that won't break the bank. We believe in fair, transparent pricing.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-microscope"></i></div>
+            <h4>Advanced Diagnostics</h4>
+            <p>We use professional-grade tools and equipment to accurately diagnose and fix complex issues.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-handshake"></i></div>
+            <h4>Customer-Centric Approach</h4>
+            <p>Your satisfaction is our priority. We listen, advise, and deliver solutions that meet your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-section">
+        <div class="process-header">
+          <span class="process-badge"><i class="fas fa-route"></i> Our Process</span>
+          <h3>How It Works</h3>
+          <p>Simple, transparent, and hassle-free from drop-off to pick-up.</p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h4>Bring Your Device</h4>
+              <p>Visit our shop or call us to book a slot.</p>
+            </div>
+          </div>
+          <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h4>Assessment</h4>
+              <p>We diagnose the issue, explain the problem, and provide a clear quote before any work begins.</p>
+            </div>
+          </div>
+          <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h4>Repair &amp; Test</h4>
+              <p>Our technicians perform the repair using genuine parts, then rigorously test your device.</p>
+            </div>
+          </div>
+          <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h4>Collect &amp; Enjoy</h4>
+              <p>Pick up your fully repaired device and pay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-guarantee">
+        <div class="guarantee-content">
+          <i class="fas fa-medal"></i>
+          <h3>100% Satisfaction Guaranteed</h3>
+          <p>We're so confident in our repairs that we offer a full warranty on all services. If you're not completely satisfied, we'll make it right.</p>
+          <div class="guarantee-badges">
+            <span><i class="fas fa-check-circle"></i> Genuine Parts</span>
+            <span><i class="fas fa-check-circle"></i> Expert Technicians</span>
+            <span><i class="fas fa-check-circle"></i> Quality Assurance</span>
+          </div>
+          <a href="#" data-page="contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-phone-alt"></i> Book a Repair Today
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="page-products" class="page-section hidden">
+      <h2>Popular Accessories</h2>
+
+      <!-- Featured Accessories: SanDisk Images Side by Side -->
+      <div class="featured-accessories">
+        <div class="featured-item">
+          <img src="WhatsApp%20Image%202026-06-27%20at%2014.52.40%20(2).jpeg" alt="Accesories" loading="lazy" onclick="openImageExpand(this.src, 'SanDisk Ultra')" />
+          <p><i class="fas fa-microchip"></i> Accesories</p>
+        </div>
+        <div class="featured-item">
+          <img src="WhatsApp Image 2026-06-27 at 14.52.40 (1).jpeg" alt="Accesories" loading="lazy" onclick="openImageExpand(this.src, 'SanDisk Extreme')" />
+          <p><i class="fas fa-bolt"></i> Accesories</p>
+        </div>
+      </div>
+
+      <p style="text-align:center; margin-bottom:20px; opacity:0.7;">Click any accessory to view its image gallery</p>
+      <div class="product-grid" id="accessoryGrid"></div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="page-location" class="page-section hidden">
+      <h2>Visit Our Shop</h2>
+      <div class="location-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Ultra Electronics Technology</h3>
+        <p><strong>Strathmore University Student Centre</strong>, Nairobi, Kenya</p>
+        <p style="font-size:0.95rem; opacity:0.7; margin-top:4px;">
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.774!2d36.8005!3d-1.2705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1747f5c7f7b5%3A0x8e4f8d8e8e8e8e8e!2sStrathmore%20University!5e0!3m2!1sen!2ske!4v1700000000000"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing Ultra Electronics at Strathmore University Student Centre"
+          ></iframe>
+        </div>
+        <div style="margin-top:16px; display:flex; flex-wrap:wrap; justify-content:center; gap:12px;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Strathmore+University+Nairobi" target="_blank" class="btn btn-primary btn-sm" style="padding:10px 24px;">
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="page-contact" class="page-section hidden">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <h3><i class="fas fa-headset" style="color:var(--primary); margin-right:10px;"></i>Get in Touch</h3>
+        <p style="margin-bottom:25px; opacity:0.8;">Reach out for repairs, accessories, or inquiries.</p>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <a href="tel:+254717673198">+254 717 673 198</a>
+            <div class="contact-label">Call or WhatsApp</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <a href="mailto:utechnologies345@gmail.com">utechnologies345@gmail.com</a>
+            <div class="contact-label">Email us anytime</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-item" style="background:transparent; box-shadow:none; cursor:default;">
+          <i class="fas fa-clock"></i>
+          <div>
+            <div style="font-weight:600;">Opening Hours</div>
+            <div style="opacity:0.8; font-size:0.95rem;">Mon - Fri: 7:30 AM - 8:00 PM</div>
+            <div style="opacity:0.8; font-size:0.95rem;">Sat: 9:00 AM - 4:00 PM</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="contact-social">
+          <p style="font-weight:600; margin-bottom:12px;">Follow Us</p>
+          <div class="social-links-small">
+            <a href="https://wa.me/254717673198" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/ultr_aelectronic" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@ultr_aelectronic" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">© 2019 Ultra Electronics Technology</div>
+  </main>
+
+  <!-- ===== BOTTOM NAVIGATION BAR (Mobile) ===== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#" data-page="home" class="bottom-nav-item active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#" data-page="services" class="bottom-nav-item">
+      <i class="fas fa-tools"></i>
+      <span>Services</span>
+    </a>
+    <a href="#" data-page="products" class="bottom-nav-item">
+      <i class="fas fa-headphones"></i>
+      <span>Accessories</span>
+    </a>
+    <a href="#" data-page="location" class="bottom-nav-item">
+      <i class="fas fa-map-pin"></i>
+      <span>Location</span>
+    </a>
+    <a href="#" data-page="contact" class="bottom-nav-item">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- GALLERY MODAL -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <h3 id="galleryTitle">Accessory Gallery</h3>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </div>
+
+  <!-- IMAGE EXPAND OVERLAY -->
+  <div class="image-expand-overlay" id="imageExpandOverlay" onclick="closeImageExpand()">
+    <button class="image-expand-close" onclick="closeImageExpand()">&times;</button>
+    <div class="image-expand-container">
+      <img id="imageExpandImg" src="" alt="Expanded Image" />
+      <p id="imageExpandCaption" class="image-expand-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
